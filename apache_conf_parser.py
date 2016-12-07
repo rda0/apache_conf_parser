@@ -28,6 +28,8 @@ class ListAdapter(col_mod.MutableSequence):
         self.items.insert(index, val)
     def __eq__(self, val):
         return self.items == val
+    def __hash__():
+        return None
     def __ne__(self, val):
         return self.items != val
     def __lt__(self, val):
